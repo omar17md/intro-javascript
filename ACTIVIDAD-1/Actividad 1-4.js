@@ -1,4 +1,4 @@
-// Ejercicio 1-3
+// Ejercicio 1-4
 
 
 var area = (8 * 6) / 2;
