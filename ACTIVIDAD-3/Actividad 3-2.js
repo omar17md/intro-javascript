@@ -11,7 +11,7 @@ if (jugador1 == jugador2) {
     case "Piedra": {
       if (jugador2 == "Tijera") {
         console.log("Gano el jugador 1");
-      } else if (jugador2) {
+      } else {
         console.log("Gano el jugador 2");
       }
     }
@@ -20,7 +20,7 @@ if (jugador1 == jugador2) {
   case "Papel": {
     if (jugador2 == "Piedra") {
       console.log("Gano el jugador 1");
-    } else if (jugador2) {
+    } else {
       console.log("Gano el jugador 2");
     }
   }
@@ -29,7 +29,7 @@ if (jugador1 == jugador2) {
   case "Tijera": {
     if (jugador2 == "Papel") {
       console.log("Gano el jugador 1");
-    } else if (jugador2) {
+    } else {
       console.log("Gano el jugador 2");
     }
   }
