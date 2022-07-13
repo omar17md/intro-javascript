@@ -10,5 +10,6 @@ function fibonacci(tam, num1, num2){
     return fibonacci(tam-1, num2, num2+num1);
 }
 
+console.log("0");
 console.log("1");
-fibonacci(6-1, 0, 1);
+fibonacci(6-2, 0, 1);

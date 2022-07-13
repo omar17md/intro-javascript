@@ -12,10 +12,10 @@ function multiply(a, b){
     }
 }
 
-let fun = multiply(12, 2);
-console.log(fun);
+// let fun = multiply(12, 2);
+// console.log(fun);
 
-// let fun = multiply(12);
-// let res = fun(2);
-// console.log(res);
+let fun = multiply(12);
+let res = fun(2);
+console.log(res);
 
