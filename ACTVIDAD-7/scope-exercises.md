@@ -16,7 +16,7 @@
   ```
 
 > undefined, 2
-> _console answer_
+> undefined, 2
 
 
 2. What is result?
