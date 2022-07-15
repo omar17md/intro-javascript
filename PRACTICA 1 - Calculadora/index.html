@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="pantalla">
+        <span id="numero1"></span>
+        <span id="operador"></span>
+        <span id="numero2"></span>
+        <span id="igualPantalla">=</span>
+        <span id="resultado">200</span>
+   </div>
+   <div id="botones">
+        <div id="numeros">
+            <button onclick="mostrar(); recibir(7);">7</button>
+            <button onclick="mostrar(); recibir(8)">8</button>
+            <button onclick="mostrar(); recibir(9)">9</button>
+            <button onclick="mostrar(); recibir(4)">4</button>
+            <button onclick="mostrar(); recibir(5)">5</button>
+            <button onclick="mostrar(); recibir(6)">6</button>
+            <button onclick="mostrar(); recibir(1)">1</button>
+            <button onclick="mostrar(); recibir(2)">2</button>
+            <button onclick="mostrar(); recibir(3)">3</button>
+            <button onclick="reiniciarPantalla();">AC</button>
+            <button onclick="mostrar(); recibir(0)">0</button>
+            <button>,</button>
+        </div>
+        <div id="operadores">
+            <button onclick="recibirOperacion('/');">/</button>
+            <button onclick="recibirOperacion('X');">X</button>
+            <button onclick="recibirOperacion('-');">-</button>
+            <button onclick="recibirOperacion('+');">+</button>
+            <button id="igual" onclick="calcular();">=</button>
+        </div>
+   </div>
+
+   <script src="js/app.js"></script>
+</body>
+</html>

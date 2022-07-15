@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+}
+
+#pantalla{
+    display: grid;
+    grid-template-columns: 162px 162px 162px 162px 162px;
+    grid-template-rows: 29vh;
+    column-gap: 100px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-items: right;
+    justify-content: right;
+    font-size: 50px;
+    padding-right: 100px;
+}
+
+
+
+#botones{
+    display: flex;
+    flex-direction: row;
+}
+
+#numeros{
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    grid-template-rows: 162px 162px 162px 162px;
+}
+
+#numeros button{
+    background-color: rgba(0, 0, 0, 0.684);
+    font-size: 50px;
+}
+
+#operadores{
+    display: grid;
+    grid-template-columns: 410px;
+    grid-template-rows: 130px 130px 130px 130px 130px;
+}
+
+#operadores button{
+    font-size: 50px;
+}
+
+#igual{
+    background-color: orange;
+}
