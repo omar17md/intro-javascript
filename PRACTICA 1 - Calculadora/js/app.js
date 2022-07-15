@@ -22,9 +22,9 @@ function reiniciarPantalla(){
 
 function agregarComa(){
     if(!dosNumeros){
-        numero1.innerText += ',';
+        numero1.innerText += '.';
     }else{
-        numero2.innerText += ',';
+        numero2.innerText += '.';
     }
 }
 
@@ -59,19 +59,19 @@ function calcular(){
 
         switch(operador.textContent){
             case "/":{
-                resultado.innerText = Number(numero1.textContent.replace(',', '')) / Number(numero2.textContent.replace(',', ''));
+                resultado.innerText = Number(numero1.textContent) / Number(numero2.textContent);
             }break;
 
             case "X":{
-                resultado.innerText = Number(numero1.textContent.replace(',', '')) * Number(numero2.textContent).replace(',', '');
+                resultado.innerText = Number(numero1.textContent) * Number(numero2.textContent);
             }break;
 
             case "-":{
-                resultado.innerText = Number(numero1.textContent.replace(',', '')) - Number(numero2.textContent.replace(',', ''));
+                resultado.innerText = Number(numero1.textContent) - Number(numero2.textContent);
             }break;
 
             case "+":{
-                resultado.innerText = Number(numero1.textContent.replace(',', '')) + Number(numero2.textContent.replace(',', ''));
+                resultado.innerText = Number(numero1.textContent) + Number(numero2.textContent);
             }break;
         }
     }
