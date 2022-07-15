@@ -20,6 +20,14 @@ function reiniciarPantalla(){
     dosNumeros = false;
 }
 
+function agregarComa(){
+    if(!dosNumeros){
+        numero1.innerText += ',';
+    }else{
+        numero2.innerText += ',';
+    }
+}
+
 function recibir(tecla){
     if(!dosNumeros){
         numero1.innerText += tecla;
@@ -51,19 +59,19 @@ function calcular(){
 
         switch(operador.textContent){
             case "/":{
-                resultado.innerText = Number(numero1.textContent) / Number(numero2.textContent);
+                resultado.innerText = Number(numero1.textContent.replace(',', '')) / Number(numero2.textContent.replace(',', ''));
             }break;
 
             case "X":{
-                resultado.innerText = Number(numero1.textContent) * Number(numero2.textContent);
+                resultado.innerText = Number(numero1.textContent.replace(',', '')) * Number(numero2.textContent).replace(',', '');
             }break;
 
             case "-":{
-                resultado.innerText = Number(numero1.textContent) - Number(numero2.textContent);
+                resultado.innerText = Number(numero1.textContent.replace(',', '')) - Number(numero2.textContent.replace(',', ''));
             }break;
 
             case "+":{
-                resultado.innerText = Number(numero1.textContent) + Number(numero2.textContent);
+                resultado.innerText = Number(numero1.textContent.replace(',', '')) + Number(numero2.textContent.replace(',', ''));
             }break;
         }
     }

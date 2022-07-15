@@ -34,6 +34,10 @@ body{
     font-size: 50px;
 }
 
+#numeros button:hover{
+    background-color: rebeccapurple;
+}
+
 #operadores{
     display: grid;
     grid-template-columns: 410px;
@@ -46,4 +50,8 @@ body{
 
 #igual{
     background-color: orange;
+}
+
+#igual:hover{
+    background-color: cornflowerblue;
 }
