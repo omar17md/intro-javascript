@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lista de tareas</title>
+</head>
+<body class="color-fondo">
+    <div class="container-fluid">
+        <div class="row row-cols-2 justify-content-center align-items-center fondo">
+            <div class="col text-center">
+                <h1 class="fs-1 fw-bold text-white me-5">T O D O</h1>
+            </div>
+            <div class="col text-center">
+                <i id="modo" class="bi bi-moon icono" onclick="CambiarModo();"></i>
+            </div>
+            <div class="col">
+                <form action="" id="form-tareas">
+                    <div class="input-group mb-3">
+                        <button class="btn btn-outline-secondary bg-primary" type="submit" id="add">Agregar Tarea</button>
+                        <input type="text" class="form-control" placeholder="Escribe el nombre de la nueva tarea"
+                            id="nuevaTarea" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                </form>                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-cols-1 justify-content-center align-items-center">
+            <div class="col-md-8 text-center align-self-center" id="box-checkbox">
+            </div>
+            <div class="col-md-8  d-flex justify-content-evenly">
+                <span id="numero-tareas" class="text-color"></span>
+                <span class="text-color">All</span>
+                <a href="#" class="quitar-desing text-color" onclick="ActiveAll();">Active</a>
+                <a href="#" class="quitar-desing text-color" onclick="DesactiveAll();">Completed</a>
+                <a href="#" class="quitar-desing text-color" onclick="LimpiarSeleccionados();">Clear Completed</a>
+            </div>
+            <div class="col-md-8 text-center mt-5">
+                <span>Drag and drop to reorder list</span>
+            </div>
+        </div>
+    </div>
+   
+    <script src="app.js"></script>
+</body>
+</html>

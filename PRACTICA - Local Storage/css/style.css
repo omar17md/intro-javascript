@@ -1,0 +1,29 @@
+.color-fondo{
+    background-color: white;
+}
+
+.icono{
+    font-size: 30px;
+}
+
+.fondo{
+    background-image: url('../img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    filter: hue-rotate(60deg);
+    height: 200px;
+}
+
+.text-color{
+    color: darkgray;
+}
+
+.quitar-desing{
+    text-decoration: none;
+}
+
+.quitar-desing:hover{
+    color: black;
+}

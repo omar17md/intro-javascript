@@ -7,3 +7,8 @@ body{
     margin-top: 30vh;
     font-size: 25px;
 }
+
+.imagen{
+    height: 100%;
+    object-fit: cover;
+}
